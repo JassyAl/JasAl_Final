@@ -8,7 +8,6 @@ const stateVerify = (req, res, next) => {
   const stateCode = statesData.map((state) => state.code);
   // match state code with state
   const matchState = stateCode.find((code) => code === states);
-
   // if not match found
   if (!matchState) {
     return res
